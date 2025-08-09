@@ -1,0 +1,68 @@
+
+
+
+/*  ============== Scroll header Code Start =================== */
+
+.scroll-header {
+    transition: background-color 0.3s ease; /* Add smooth transition effect */
+}
+
+.scrolled {
+    background-color: red; /* Change to the color you want */
+}
+
+
+
+
+/* ========== Jquery code :  ======== */ 
+jQuery(document).ready(function($) {
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 100) {
+            $('.scroll-header').addClass('scrolled');
+        } else {
+            $('.scroll-header').removeClass('scrolled');
+        }
+    });
+});
+
+/* End the Scrolll header code */
+
+
+
+
+
+
+/* ============== Background Water Mark Heading Effect Code Start =================== */
+
+
+
+
+
+#box1{
+    position: relative;
+    text-align: center;
+    transition: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+}
+
+
+
+#box1 .box1-text-wrapper .box1-text-wrapper-text{
+    color: #393939 !important;
+    font-size: 250px !important;
+    padding: 50px 16px;
+    -webkit-mask-image: linear-gradient(180deg, rgba(0,0,0,0) 25%, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%); 
+    
+}
+
+#box1 .box1-text-wrapper .box1-text-wrapper-para{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+
+
+/* ============== Background Water Mark Heading Effect End =================== */
+
